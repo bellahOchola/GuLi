@@ -1,0 +1,137 @@
+{% extends 'base.html' %} {% block content %}
+
+<style>
+  #about {
+    margin-top: 20%;
+  }
+</style>
+<div class="container">
+  <div class="row mb-5 justify-content-center">
+    <div class="col-md-8 text-center">
+      <h2 class="text-black h1 site-section-heading text-center" id="about">
+        About Us
+      </h2>
+      <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque, delectus odio iure explicabo.</p> -->
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mt-4">
+      <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY" >
+      </iframe>
+      <iframe width="420" height="315" class="mt-5"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY" >
+      </iframe>
+    </div>
+    <div class="col-md-6">
+      <h4>Background Information</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
+        efficitur erat, non dignissim augue. Suspendisse urna turpis, ultricies
+        in arcu ac, rhoncus molestie diam. Aliquam aliquam fringilla justo, et
+        tempor dui tempor sit amet. Nunc dapibus magna in metus volutpat, vel
+        posuere arcu tempus. Nulla facilisi. Aliquam placerat lacinia ex ac
+        viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+        sit amet neque porta, elementum urna quis, consequat nisl.
+      </p>
+
+      <h4 class="mt-4">What we Do</h4>
+      <li>
+        Etiam fermentum ullamcorper faucibus. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas.
+      </li>
+      <li>
+        Etiam fermentum ullamcorper faucibus. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas.
+      </li>
+      <li>
+        Etiam fermentum ullamcorper faucibus. Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas.
+      </li>
+
+      <h4 class="mt-4">Current Projects</h4>
+      <li>
+        Suspendisse vitae dolor in nibh suscipit pharetra id nec diam. Proin
+        ligula mi, feugiat ut mauris in, interdum porta urna. Aenean at magna a
+        nisi ornare dignissim.
+      </li>
+      <li>
+        Suspendisse vitae dolor in nibh suscipit pharetra id nec diam. Proin
+        ligula mi, feugiat ut mauris in, interdum porta urna. Aenean at magna a
+        nisi ornare dignissim.
+      </li>
+      <li>
+        Suspendisse vitae dolor in nibh suscipit pharetra id nec diam. Proin
+        ligula mi, feugiat ut mauris in, interdum porta urna. Aenean at magna a
+        nisi ornare dignissim.
+      </li>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="footer-heading mb-4">About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              facere laudantium magnam voluptatum autem. Amet aliquid nesciunt
+              veritatis aliquam.
+            </p>
+          </div>
+          <div class="col-md-3 ml-auto">
+            <h2 class="footer-heading mb-4">Features</h2>
+            <ul class="list-unstyled">
+              <li><a href="{% url 'about' %}">About Us</a></li>
+              <li><a href="{% url 'work' %}">Our Works</a></li>
+              <!-- <li><a href="#">Testimonials</a></li> -->
+              <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h2 class="footer-heading mb-4">Follow Us</h2>
+            <a href="#" class="pl-0 pr-3"
+              ><span class="icon-facebook"></span
+            ></a>
+            <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+            <a href="#" class="pl-3 pr-3"
+              ><span class="icon-instagram"></span
+            ></a>
+            <a href="#" class="pl-3 pr-3"
+              ><span class="icon-linkedin"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+        <form action="#" method="post">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control border-secondary text-white bg-transparent"
+              placeholder="Enter Email"
+              aria-label="Enter Email"
+              aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-primary text-white"
+                type="button"
+                id="button-addon2"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}
